@@ -1,10 +1,6 @@
-let newStr = '';
-
-function reverseAString(str) {
-    for (let i = str.length - 1; i >= 0; i--){
-        newStr += str[i];       
-    }
-    console.log(newStr);
+function convertToFahrenheit(value) {
+    return value * 1.8 + 32;
 }
 
-let resultado = reverseAString('Teste');
+let result = convertToFahrenheit(40);
+console.log(`O valor em fahrenheit é: ${result}`)
