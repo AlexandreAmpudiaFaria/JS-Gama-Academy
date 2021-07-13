@@ -1,18 +1,10 @@
-let resultado = fizzBuzz(7);
-console.log(resultado);
+let newStr = '';
 
-function fizzBuzz(entrada){
-    if(typeof entrada !== 'number')
-        return 'Não é um número';
-    if((entrada % 3 === 0) && (entrada % 5 === 0)) {
-        return 'FizzBuzz'
+function reverseAString(str) {
+    for (let i = str.length - 1; i >= 0; i--){
+        newStr += str[i];       
     }
-    if(entrada % 3 === 0){
-        return 'Fizz'
-    }
-    if(entrada % 5 === 0)
-    return 'Buzz'
+    console.log(newStr);
+}
 
-
-    return entrada;
-};
+let resultado = reverseAString('Teste');
